@@ -1,5 +1,5 @@
 {
-  "version": "1.9.9",
+  "version": "1.10.0",
   "updated": "2026-09-01",
   "minEngine": "1.9.0",
   "notes": "Hot-fix config. Edit, commit, push to main - every install picks it up within the hour with no Web Store resubmission. DATA ONLY: CSS selector strings and word lists. Never add code, function bodies or anything eval'd here; remotely hosted code violates Chrome Web Store policy. Add a locale by appending its send/attach/mic words to 'lexicons'.",
@@ -200,6 +200,7 @@
       "hidden": false
     },
     "productIds": [
+      "pZ5KvoYSom38wu6i3sjXwA==",
       "FvsdVqr-hf0XEcvl-G1MNg=="
     ]
   }
