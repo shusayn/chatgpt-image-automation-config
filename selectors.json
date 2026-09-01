@@ -1,5 +1,5 @@
 {
-  "version": "1.10.0",
+  "version": "1.10.1",
   "updated": "2026-09-01",
   "minEngine": "1.9.0",
   "notes": "Hot-fix config. Edit, commit, push to main - every install picks it up within the hour with no Web Store resubmission. DATA ONLY: CSS selector strings and word lists. Never add code, function bodies or anything eval'd here; remotely hosted code violates Chrome Web Store policy. Add a locale by appending its send/attach/mic words to 'lexicons'.",
@@ -15,11 +15,11 @@
     ],
     "sendButton": [
       "button[data-testid='send-button']",
-      "button[data-testid*='send']",
-      "form button[type='submit']",
+      "button#composer-submit-button",
       "button[aria-label='Send prompt']",
+      "button[data-testid*='send']",
       "button[aria-label*='Send']",
-      "form button:not([class*='pill']):not([aria-haspopup]):not([aria-pressed]):last-of-type"
+      "form button[type='submit']"
     ],
     "fileInput": [
       "form input[type='file']",
@@ -27,11 +27,11 @@
       "input[type='file']"
     ],
     "attachButton": [
+      "button[data-testid='composer-plus-btn']",
       "button[data-testid='composer-plus-button']",
+      "button[aria-label*='Add files']",
       "button[aria-label*='Attach']",
       "button[aria-label*='Upload']",
-      "button[aria-label*='Add files']",
-      "button[aria-label*='Add photos']",
       "button[aria-label*='More options']"
     ],
     "stopButton": [
@@ -55,8 +55,9 @@
     ],
     "assistantTurn": [
       "div[data-message-author-role='assistant']",
-      "article[data-testid*='conversation-turn']",
-      "article"
+      "[data-message-author-role='assistant']",
+      "[data-testid^='conversation-turn']",
+      "article[data-testid*='conversation-turn']"
     ],
     "uploadProgress": [
       "form div[role='progressbar']",
