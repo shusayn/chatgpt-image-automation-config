@@ -1,5 +1,5 @@
 {
-  "version": "1.9.4",
+  "version": "1.9.7",
   "updated": "2026-09-01",
   "minEngine": "1.9.0",
   "notes": "Hot-fix config. Edit, commit, push to main - every install picks it up within the hour with no Web Store resubmission. DATA ONLY: CSS selector strings and word lists. Never add code, function bodies or anything eval'd here; remotely hosted code violates Chrome Web Store policy. Add a locale by appending its send/attach/mic words to 'lexicons'.",
@@ -178,5 +178,27 @@
   "licensing": {
     "_comment": "Tune the seat limit without a store update. Raise it if buyers legitimately need more machines.",
     "maxActivations": 3
+  },
+  "pricing": {
+    "_comment": "Change prices, checkout links or hide a tier without a store resubmission. Checkout URLs must be https and on a known payment host (gumroad, lemonsqueezy, paddle, polar, stripe) or they are ignored in favour of the bundled fallback. Set hidden:true to retire a tier - useful for dropping the monthly plan, where fixed fees and VAT eat the most.",
+    "productId": "xcmkl",
+    "monthly": {
+      "url": "https://nayeemhussain.gumroad.com/l/xcmkl?wanted=true",
+      "price": "$2.99",
+      "period": "/mo",
+      "hidden": false
+    },
+    "annual": {
+      "url": "https://nayeemhussain.gumroad.com/l/ymnbox?wanted=true",
+      "price": "$29.99",
+      "period": "/yr",
+      "hidden": false
+    },
+    "lifetime": {
+      "url": "https://nayeemhussain.gumroad.com/l/qfqssm",
+      "price": "$75",
+      "period": "",
+      "hidden": false
+    }
   }
 }
