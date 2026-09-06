@@ -26,7 +26,7 @@ Clearing the extension's data, or uninstalling it, removes all of it permanently
 
 ## Network requests
 
-The extension makes exactly three kinds of outbound request:
+The extension makes exactly four kinds of outbound request:
 
 1. **chatgpt.com** — the extension operates the ChatGPT page you already have
    open, in your own logged-in session. It sends the prompts you entered. It
