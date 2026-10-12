@@ -1,6 +1,6 @@
 {
-  "version": "1.11.3",
-  "updated": "2026-09-10",
+  "version": "1.11.4",
+  "updated": "2026-10-12",
   "minEngine": "1.9.0",
   "notes": "Hot-fix config. Edit, commit, push to main - every install picks it up within the hour with no Web Store resubmission. DATA ONLY: CSS selector strings and word lists. Never add code, function bodies or anything eval'd here; remotely hosted code violates Chrome Web Store policy. Add a locale by appending its send/attach/mic words to 'lexicons'.",
   "selectors": {
@@ -213,7 +213,8 @@
     ]
   },
   "support": {
-    "_comment": "Optional. Set 'discord' to your invite URL (https, on discord.gg / discord.com) and the Join our Discord button appears in the Contact Support panel - no store resubmission. Empty string hides it. Only honoured by engine 2.1.0+.",
-    "discord": "https://discord.gg/JHbDGxNqf"
+    "_comment": "Optional support links, applied without a store resubmission. 'discord': invite URL (https, on discord.gg / discord.com) shows the Join our Discord button; empty hides it. 'uninstallUrl': a survey opened when the extension is removed (https, on docs.google.com / forms.gle / forms.office.com / *.typeform.com / tally.so / surveymonkey.com / getfeedback.com); empty disables it. Honoured by engine 2.1.0+ (uninstallUrl: 2.4.0+).",
+    "discord": "https://discord.gg/JHbDGxNqf",
+    "uninstallUrl": ""
   }
 }
